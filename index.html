@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Wix+Madefor+Display:wght@400..800&display=swap" rel="stylesheet">
+</head>
+<body style="font-family: Fira Sans Condensed; background-color: #FFFAB1;">
+    <div id="app"></div>
+    <script type="text/babel" src="Main.jsx"></script>
+    <script type="text/babel" src="MainImage.jsx"></script>
+    <script type="text/babel" src="Head.jsx"></script>
+    <script type="text/babel" src="Bio.jsx"></script>
+    <script type="text/babel" src="Images.jsx"></script>
+    <script type="text/babel" src="Text.jsx"></script>
+    <script type="text/babel">
+        const root = ReactDOM.createRoot(document.getElementById("app"));
+        root.render(
+            <React.StrictMode>
+                <Main
+                    name='Рыжик'
+                   
+                    breed='Домашний кот'
+                    mainPhoto='https://cdn.britannica.com/34/235834-050-C5843610/two-different-breeds-of-cats-side-by-side-outdoors-in-the-garden.jpg'
+                    bio='Рыжик - очень дружелюбный кот, который любит играть и спать на солнечных лучах.'
+                    photo='https://png.pngtree.com/png-clipart/20210829/original/pngtree-ginger-cat-animal-orange-fluff-png-image_6659115.jpg'
+                    picture1='https://s.poembook.ru/theme/a0/17/00/18d5dbc9d9783eb68e88b3378dc5059d7992747d.jpeg'
+                    picture2='https://ae04.alicdn.com/kf/Ad76d642b50664de4907fa8c1806b0d9du.jpeg'
+                    picture3='https://storage-api.petstory.ru/resize/800x800x80/0e/66/6e/0e666e42f685417082a9ef97c8619af4.jpeg'
+                text='У меня живёт кот. Зовут его - Рыжик. Шерсть у него рыжая и густая. Рыжик очень любит покушать и любит, когда его гладят.
+Мой кот любит играть в прятки. Я прячусь, а он меня ищет. Еще у него есть любимый мячик. Я кидаю ему мяч, а он мне его приносит и просит, чтобы я опять кинул. Так мы можем играть очень долго.
+Мой кот Рыжик - это не просто кот, а настоящий друг. Он всегда любит проводить время со мной. При этом он очень умный и любопытный. Если я не хочу идти гулять, он будет сидеть на руках и мурлыкать, пока я не соглашусь. А как только я выйду на улицу, он сразу же побежит за мной.
+Я люблю своего кота.'
+
+                />
+            </React.StrictMode>
+        );
+    </script>
+</body>
+</html>
